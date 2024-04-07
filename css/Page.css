@@ -1,0 +1,494 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    /* background-color: rgb(254, 235, 201); */
+    background-image: url(../img/Background.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+
+
+* {
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Стиль верхушки бара */
+.navbar {
+    overflow: hidden;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    
+}
+
+/* Стиль ссылок */
+.navbar a {
+    /* display: block;
+    float: left; */
+    color: white;
+    background-color: #6e3e3e;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    margin-left: 5%;
+    margin: 1%;
+}
+
+.LOGO img{
+    display: block;
+    margin: 10%;
+    margin-right: 30%;
+    float: left;
+}
+
+/* .LOGO img{
+    padding: 20px;
+    width: 60%;
+    height: 60%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: stretch;
+} */
+
+/* Ссылка справа */
+.navbar a.right {
+    float: right;
+}
+
+/* Изменение цвета hover */
+.navbar a:hover {
+    background-color: #ea3e3e;
+    color: black;
+}
+
+/* Стиль header */
+.header {
+    padding: 40px;
+    text-align: center;
+    background-image: url(../img/General/salyut.jpg);
+    color: white;
+    
+}
+
+.Log img{
+   
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: stretch;
+}
+
+.Korzina img {
+    float: right ;
+  
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: stretch;
+}
+
+/* ----------------------------------- */
+.header h1 {
+    font-size: 80px;
+}
+
+.wrapper {
+    height: 50%;
+    padding: 10px;
+   
+}
+
+
+
+.menu {
+    background: linear-gradient(to bottom, #fff, #f1f2f2); /* Градиент */
+    border: 1px solid #999; /* Параметры рамки */
+    display: inline-flex;
+    padding: 0 5px; /* Поля */
+    font: 14px Arial, sans-serif; /* Параметры шрифта */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Тень под меню */
+   }
+
+.menu_list, .menu_list ul { 
+    list-style: none;
+    margin: 0; padding: 0;
+}
+
+.menu_list a {
+    text-decoration: none;
+    display: block;
+    color: #4c4c4c;
+}
+
+.menu_list > li {
+    list-style: none;
+    position: relative;
+    display: inline-block; /* Выстраиваем по горизонтали */
+    border-right: 1px solid #fff; /* Белая линия справа */
+}
+.menu_list > li > a {
+    padding: 10px 15px; /* Поля */
+    border-right: 1px solid #d8d8d8; /* Серая линия справа */
+    position: relative; /* Относительное позиционирование */
+    z-index: 3; /* Выводим поверх остальных элементов */
+}
+
+
+.menu_list ul {
+    position: absolute; /* Абсолютное позиционирование */
+    display: none; /* Прячем подменю */
+    width: 200px; /* Ширина подменю */
+    background: #fff; /* Цвет фона */
+    box-shadow: 0 0 10px #666; /* Параметры тени */
+}
+
+.menu_list ul a {
+    padding: 5px 10px; /* Поля */
+}
+
+.menu_list ul a:hover {
+    background: #008df2; /* Цвет фона */
+    color: #fff; /* Цвет текста */
+}
+
+/*------------------------------------------------------------------------*/
+.pod_katalog  a:hover {
+    position: relative;
+    display: block;
+}
+
+
+/*------------------------------------------------------------------------*/
+
+
+.sub-sub-menu_list > li {
+    display: block;
+    top: 20px;
+    position: absolute;
+}
+
+.menu > li:hover::before {
+    content: ''; /* Создаём пустой псевдоэлемент */
+    top: 0; left: 0; right: 0; bottom: 0; /* Размер совпадает с пунктом меню */
+    box-shadow: 0 5px 10px #666; /* Параметры тени */
+    position: absolute; /* Абсолютное позиционирование */
+}
+
+.menu_list {
+    display: flex;
+}
+
+.menu_list li {
+    margin: 0px 10px 0px 0px;
+}
+
+.menu_list>li:hover .sub-menu_list{
+    display: block;
+}
+
+
+.sub-menu_list {
+    display: none;
+    min-width: 300px;
+    position: absolute;
+    left: 0;
+    top: 35px
+    
+}
+
+.sub-menu_list>li:hover .pod_catalog{
+    display: block;
+    left: 290px;
+    position: absolute;
+    padding:  10px;
+    top: 0;
+}
+
+
+.banner img {
+    width: 100%;
+    
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+.rules img {
+    width: 100%;
+    
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+/* MAIN ----------------------------- */
+.main {
+    background-color: lightgrey;
+    margin: 7%;
+    text-align: center;
+    /* padding: 0.5%; */
+    /* display: flex; */
+    
+}
+
+.main h2{
+    font-size: 35px;
+}
+
+
+.main_page3{
+    background-color: lightgrey;
+    margin: 7%;
+    text-align: center;
+}
+
+.container3 {
+    display: flex;
+    flex-flow: row wrap;
+    height: 100%;
+    justify-content: start;
+    text-align: center;
+}
+
+.main_page3 p {
+    padding: 2%;
+    margin-left: 20%;
+    color: #454242;
+    font-size: 23px;
+}
+
+.main_page3 h2 {
+    padding: 2%;
+    margin-left: 20%;
+}
+
+.main_page3 h3 {
+    padding: 2%;
+    margin-left: 20%;
+}
+/* ------------------------------ */
+
+
+
+.main_page4{
+    background-color: rgb(152, 26, 26);
+    margin: 7%;
+    text-align: center;
+}
+
+.container4 {
+    display: flex;
+    flex-flow: row wrap;
+    height: 100%;
+    justify-content: start;
+    text-align: center;
+}
+
+.container4 img{
+    width: 50%;
+    height: 50%;
+    margin-left: 10%;
+}
+
+.loyal p {
+    margin-left: 5%;
+    font-size: 25px;
+    color: white;
+}
+
+.loyal{
+    border: 1px solid black;
+    background-color: black;
+}
+
+.style4{
+    background-color: white;
+}
+/* ------------------------------- */
+
+.main_page5{
+    /* background-color: rgb(0, 0, 0); */
+    /* margin: 7%;
+    text-align: center; */
+    
+}
+
+#pole {
+    display: flex;
+    flex-flow: column wrap;
+    /* width: 20%; */
+    align-content: center;
+    justify-content: center;
+    /* border: 1px solid silver; */
+}
+/* .main_page5 label{
+    color: white;
+} */
+
+.main_page5 input{
+    margin: 1%;
+    width: 20%;
+    padding: 20px 10px; 
+    line-height: 28px;
+    /* border-radius: 30%; */
+    border-top-right-radius: 25%;
+    border-bottom-left-radius: 25%;
+    background-color: rgb(255, 255, 255);
+}
+
+.main_page5 input[type="submit"]{
+    background-color: rgb(141, 25, 25);
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(173, 6, 6);
+}
+
+
+#FIO:hover {
+    background-color: #6e3e3e;
+    color: white;
+    font: bold;
+}
+
+#tel:hover {
+    background-color: #6e3e3e;
+    color: white;
+    font: bold;
+}
+
+#ema:hover {
+    background-color: #6e3e3e;
+    color: white;
+    font: bold;
+}
+
+/* ------------------------------- */
+.container {
+    display: flex;
+    flex-flow: row wrap;
+    height: 100%;
+}
+
+.container a{
+    padding: 20px;
+    width: 25%;
+    height: 25%;
+   text-align: center;
+   font-size: 30px;
+    /* flex-flow: column wrap; */
+}
+
+.container a:hover {
+    opacity: 50%;
+    background-color: gray;
+}
+/* ------------------------------------- */
+
+.container2 {
+    display: flex;
+    flex-flow: row wrap;
+    height: 100%;
+    justify-content: space-evenly;
+}
+
+.container2 a{
+    padding: 20px;
+    width: 25%;
+    height: 25%;
+   text-align: center;
+   font-size: 30px;
+   
+    /* flex-flow: column wrap; */
+}
+
+
+
+
+
+.container2 a:hover {
+    opacity: 50%;
+    background-color: gray;
+}
+
+
+
+.SAL img{
+    
+    float: right;
+    padding: 20px;
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: stretch;
+   
+}
+
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+}
+
+
+@media screen and (max-width: 700px) {
+    .row {
+        flex-direction: column;
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    .navbar a {
+        float: none;
+        width:100%;
+    }
+}
+.footer{
+background:rgb(174, 72, 51);
+padding:30px 0px;
+font-family: 'Play', sans-serif;
+text-align:center;
+}
+.footer .row{
+width:100%;
+margin:1% 0%;
+padding:0.6% 0%;
+color:black;
+font-size:0.8em;
+}
+.topNubex img {
+    position: fixed;
+    right: 45px;
+    bottom: 45px;
+    color: black;
+    
+    width: 2.97%;
+    height: 5.59%;
+    border-radius: 5px;
+}
+
+.downNubex img  {
+    position: fixed;
+    left: 45px;
+    bottom: 45px;
+    color: black;
+    
+    flex-flow: row nowrap;
+    align-items: stretch;
+    width: 2.97%;
+    height: 5.59%;
+    border-radius: 5px;
+}
+
+@media only screen and (max-width: 400px) {
+    .downNubex img {
+        width: 100;
+   
+    }
+}
